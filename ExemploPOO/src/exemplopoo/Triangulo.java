@@ -17,6 +17,7 @@ public class Triangulo {
     public float c;
     //public float p;
     public float area;
+    public float perimetro;
     public String nome;
     
     public void definirLados(){
@@ -43,8 +44,12 @@ public class Triangulo {
         System.out.println("O valor do lado A: " + a);
         System.out.println("O valor do lado B: " + b);
         System.out.println("O valor do lado C: " + c);
-        //System.out.println("O valor de P: " + p);
+        System.out.println("O valor de Perimetro: " + perimetro);
         System.out.println("O valor da area: " + area);
     }
 
+    public void calcularPerimetro(){
+        perimetro = a+b+c;
+    }
+    
 }

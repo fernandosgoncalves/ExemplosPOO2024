@@ -25,10 +25,14 @@ public class ExemploPOO {
         
         System.out.println("Informe os lados do triangulo A: ");
         x.definirLados();
+        System.out.println("Informe os lados do triangulo B: ");
         y.definirLados();
                 
         x.calcularArea();
         y.calcularArea();
+        
+        x.calcularPerimetro();
+        y.calcularPerimetro();
         
         x.mostraDados();
         y.mostraDados();
