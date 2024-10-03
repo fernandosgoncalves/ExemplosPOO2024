@@ -14,10 +14,11 @@ public class Produto {
     public float preco;
     public int quantidade;
     
-    public void mostraDados(){
-        System.out.println("Nome: " + nome + " Quant: "+ quantidade 
+    @Override
+    public String toString(){
+        return "Nome: " + nome + " Quant: "+ quantidade 
                 + " Preco UN: " + preco + " Valor Total: " +
-                valorTotalemEstoque());
+                valorTotalemEstoque();
     }
     
     public float valorTotalemEstoque(){

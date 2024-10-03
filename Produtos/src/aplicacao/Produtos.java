@@ -32,7 +32,8 @@ public class Produtos {
         System.out.println("Informe o preco unitario: ");
         p1.preco = ler.nextFloat();
         
-        p1.mostraDados();
+        //p1.mostraDados();
+        System.out.println(p1);
         
         System.out.println("Informe o nome do produto: ");
         p2.nome = lerTexto.nextLine();
@@ -41,7 +42,8 @@ public class Produtos {
         System.out.println("Informe o preco unitario: ");
         p2.preco = ler.nextFloat();
         
-        p2.mostraDados();
+        //p2.mostraDados();
+        System.out.println(p2.toString());
         
         System.out.println("Informe a quantidade de produtos que deseja inseir:");
         quant = ler.nextInt();
@@ -53,8 +55,10 @@ public class Produtos {
         
         p2.adicionaProduto(quant);
         
-        p1.mostraDados();
-        p2.mostraDados();
+        //p1.mostraDados();
+        //p2.mostraDados();
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
         
         System.out.println("Informe a quantidade que deseja remover: ");
         quant = ler.nextInt();
@@ -66,8 +70,11 @@ public class Produtos {
         
         p2.removeProduto(quant);
         
-        p1.mostraDados();
-        p2.mostraDados();
+        //p1.mostraDados();
+        //p2.mostraDados();
+        
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
     }
     
 }
