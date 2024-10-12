@@ -20,4 +20,11 @@ public class Calculadora {
         return 2 * PI * raio;
     }
     
+    public static double areaQuadrado(double lado){
+        return lado*lado;
+    }
+    
+    public static double perimetroQuadrado(double lado){
+        return lado+lado+lado+lado;
+    }
 }

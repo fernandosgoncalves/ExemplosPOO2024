@@ -5,6 +5,7 @@
  */
 package metodoestatico;
 
+import entidades.Quadrado;
 import java.util.Scanner;
 
 /**
@@ -17,7 +18,8 @@ public class MetodoEstatico {
      */
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
-        //Calculadora calc = new Calculadora();
+        
+        Quadrado quad = new Quadrado();
         
         double raio;
         double c;
@@ -28,6 +30,14 @@ public class MetodoEstatico {
         
         c = Calculadora.circunferencia(raio);
         v = Calculadora.volume(raio);
+        
+        System.out.print("Informe o valor do lado do quadrado: ");
+        quad.lado = ler.nextDouble();z
+        
+        quad.area = Calculadora.areaQuadrado(quad.lado);
+        quad.perimetro = Calculadora.perimetroQuadrado(quad.lado);
+        
+        System.out.println(quad);
         
         System.out.println("Circ.: " + c);
         System.out.println("Volume: " + v);

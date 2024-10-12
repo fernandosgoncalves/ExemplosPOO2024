@@ -20,21 +20,25 @@ public class ExemploAlunoPoo {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         Scanner lerTexto = new Scanner(System.in);
-        
-        Aluno aluno1 = new Aluno();
+        String auxNome;
+        float nota[] = new float[3];
+               
         Aluno aluno2 = new Aluno();
-        
+                               
         System.out.print("Informe o nome do aluno 1: ");
-        aluno1.nome = lerTexto.nextLine();
+        auxNome = lerTexto.nextLine();
         
         System.out.print("Informe a nota 1 do aluno 1: ");
-        aluno1.notas[0] = ler.nextFloat();
+        nota[0] = ler.nextFloat();
         
         System.out.print("Informe a nota 2 do aluno 1: ");
-        aluno1.notas[1] = ler.nextFloat();
+        nota[1] = ler.nextFloat();
         
         System.out.print("Informe a nota 3 do aluno 1: ");
-        aluno1.notas[2] = ler.nextFloat();
+        nota[2] = ler.nextFloat();
+        
+        Aluno aluno1 = new Aluno(auxNome, nota[0], nota[1], nota[2]);
+        System.out.println(aluno1.toString());
         
         System.out.print("Informe o nome do aluno 2: ");
         aluno2.nome = lerTexto.nextLine();
