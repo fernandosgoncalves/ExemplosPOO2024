@@ -50,11 +50,11 @@ public class Conta {
         return saldo;
     }
 
-    public void deposito(float montante){
+    public final void deposito(float montante){
         this.saldo += montante;
     }
     
     public void saque(float montante){
-        this.saldo -= montante;
+        this.saldo -= (montante + 5.00);
     }
 }
